@@ -44,7 +44,7 @@ class Report {
     Uri url =
         Uri.https('autorescue.services', '/api/app/v1/user/user/send_mssg');
     var response = await http.post(url, body: {
-      "idUser": AuthLoginUser.idUser.toString(),
+      "id": AuthLoginUser.idUser.toString(),
       "text": text,
     });
     var json = await jsonDecode(response.body);

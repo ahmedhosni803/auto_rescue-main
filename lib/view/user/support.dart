@@ -30,7 +30,7 @@ class _SupportState extends State<Support> {
             children: [
               customSizedBox(0.0, 100.h),
               AppImages().assetImageWithWidthAndHeight(
-                  AppImagesPath.IconeApp, 90.w, 80.h),
+                  AppImagesPath.avatar, 90.w, 80.h),
               customSizedBox(0.0, 12.h),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 10.w),

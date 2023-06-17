@@ -14,4 +14,5 @@ class AppImagesPath {
   static const IconeApp = "assets/images/IconApp.png";
   static const LogoApp1 = "assets/images/logoo_1.png";
   static const IconeApp2 = "assets/images/IconApp2.png";
+  static const avatar = "assets/images/avatar.png";
 }
