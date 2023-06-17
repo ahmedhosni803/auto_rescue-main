@@ -1,15 +1,16 @@
 import 'package:auto_doctor/data/models/services_model.dart';
 import 'package:auto_doctor/sharedWidgets/navigating/myNavigator.dart';
 import 'package:auto_doctor/view/user/addCredit.dart';
+import 'package:auto_doctor/view/user/support.dart';
 import 'package:auto_doctor/view/user/wallet_user.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+
 import 'WidgetAssitance/selectTheTypeOfWidget.dart';
 import 'confirmItems.dart';
 import 'history.dart';
 import 'login.dart';
-import '../Service Provider/order_details.dart';
 import 'profile_user.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -138,9 +139,14 @@ class _HomeScreenState extends State<HomeScreen> {
                 color: Colors.black,
               ),
               title: const Text("Support",
-                  style: TextStyle(color: Colors.black,)
-              ),
-              onTap: (){},
+                  style: TextStyle(
+                    color: Colors.black,
+                  )),
+              onTap: () {
+                Navigator.of(context).push(MaterialPageRoute(builder: (v) {
+                  return Support();
+                }));
+              },
             ),
             ListTile(
               leading: Icon(
